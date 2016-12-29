@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Page Title</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/main.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <base href="/">
+    <script src="/libs/angular2-polyfills.js"></script>
+    <script src="/libs/system.js"></script>
+    <script src="/libs/typescript.js"></script>
+    <script src="/libs/Rx.js"></script>
+    <script src="/libs/angular2.dev.js"></script>
+    <script src="/libs/router.dev.js"></script>
+    <script>
+    System.config({
+      transpiler: 'typescript',
+      typescriptOptions: {
+        emitDecoratorMetadata: true
+      },
+      map: {
+        app: './js'
+      },
+      packages: {
+        app: {
+          main: './main.ts',
+          defaultExtension: 'ts'
+        }
+      }
+    });
+    System
+      .import('app')
+      .catch(console.error.bind(console));
+    </script>
+  </head>
+  <body>
+
+    <my-app>
+      Loading...
+    </my-app>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/main.min.js"></script>
+  </body>
+</html>

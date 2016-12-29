@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap-seed-project",
+  "description": "A simple ready to use project directory with the help of gulp, less, browser-sync and some other plugins.",
+  "main": "app.js",
+  "authors": [
+    "Gulshan kumar <kumar.gulshan80@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "bootstrap",
+    "seed"
+  ],
+  "homepage": "https://github.com/designergulshan/bootstrap-seed-project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
